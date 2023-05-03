@@ -7,7 +7,7 @@ import LoginButton from './styledComponents'
 import './index.css'
 
 class Login extends Component {
-  state = {username: '', password: '', isShow: false, errMsg: ''}
+  state = {username: 'rahul', password: 'rahul@2021', isShow: false, errMsg: ''}
 
   onChangeUsername = event => {
     this.setState({username: event.target.value})
@@ -80,7 +80,7 @@ class Login extends Component {
                   <input
                     onChange={this.onChangeUsername}
                     id="username"
-                    placeholder="Username"
+                    placeholder="Username is rahul"
                     className={`input-element-login-route ${darkColor}`}
                     type="text"
                     value={username}
@@ -93,7 +93,7 @@ class Login extends Component {
                   </label>
                   <input
                     onChange={this.onChangePassword}
-                    id="password"
+                    id="password is rahul@2021"
                     placeholder="Password"
                     className={`input-element-login-route ${darkColor}`}
                     type={typeAsPerShowPassword}
